@@ -1,14 +1,24 @@
+using System.Collections.Generic;
+
 namespace MadLibs.Models
 {
   public class Game
   {
-    public string[] test { get; set; }
+    public string[] Nouns { get; set; }
+    public string[] Verbs { get; set; }
+    public string[] Adjectives { get; set; }
+    public string[] PluralNouns { get; set; }
 
-    public Game(string test1, string test2)
+    public Game(string[] nouns, string[] verbs, string[] adjectives, string[] pluralNouns)
     {
-      test = new string[2];
-      test[0] = test1;
-      test[1] = test2;
+      Nouns = new string[nouns.Length];
+      Verbs = new string[verbs.Length];
+      Adjectives = new string[adjectives.Length];
+      PluralNouns = new string[pluralNouns.Length];
+      nouns.CopyTo(Nouns, 0);
+      verbs.CopyTo(Verbs, 0);
+      adjectives.CopyTo(Adjectives, 0);
+      pluralNouns.CopyTo(PluralNouns, 0);
     }
   }
 }
