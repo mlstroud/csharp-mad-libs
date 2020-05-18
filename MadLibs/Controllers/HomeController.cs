@@ -1,9 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
-using FriendLetter.Models;
+using MadLibs.Models;
 
 namespace MadLibs.Controllers
 {
   public class HomeController : Controller
   {
+    [Route("/")]
+    public ActionResult Index()
+    {
+      return View();
+    }
   }
 }
