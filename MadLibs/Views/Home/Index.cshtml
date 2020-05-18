@@ -2,8 +2,17 @@
 <html>
   <head>
     <title>Mad Libs</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Mad Libs</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Mad Libs</h1>
+      </div>
+      <div>
+        @Model.test[0]<br>
+        @Model.test[1]
+      </div>
+    </div>
   </body>
 </html>

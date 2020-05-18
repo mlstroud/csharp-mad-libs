@@ -8,7 +8,8 @@ namespace MadLibs.Controllers
     [Route("/")]
     public ActionResult Index()
     {
-      return View();
+      Game game = new Game("test", "test2");
+      return View(game);
     }
   }
 }
