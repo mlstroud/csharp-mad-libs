@@ -17,5 +17,11 @@ namespace MadLibs.Controllers
     {
       return View();
     }
+
+    [Route("/pirates/story")]
+    public ActionResult PirateStory()
+    {
+      return View();
+    }
   }
 }
