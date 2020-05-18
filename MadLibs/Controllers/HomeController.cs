@@ -8,8 +8,7 @@ namespace MadLibs.Controllers
     [Route("/")]
     public ActionResult Index()
     {
-      Game game = new Game("test", "test2");
-      return View(game);
+      return View();
     }
 
     [Route("/pirates")]
@@ -19,9 +18,11 @@ namespace MadLibs.Controllers
     }
 
     [Route("/pirates/story")]
-    public ActionResult PirateStory()
+    public ActionResult PirateStory(string noun, string adjective, string verb, string pluralnoun)
     {
-      return View();
+
+      Game pirate = new Game(new string[] { noun }, new string[] { verb }, new string[] { adjective }, new string[] { pluralnoun });
+      return View(pirate);
     }
   }
 }
