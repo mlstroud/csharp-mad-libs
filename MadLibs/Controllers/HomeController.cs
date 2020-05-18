@@ -11,5 +11,11 @@ namespace MadLibs.Controllers
       Game game = new Game("test", "test2");
       return View(game);
     }
+
+    [Route("/pirates")]
+    public ActionResult Pirates()
+    {
+      return View();
+    }
   }
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mad Libs</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pirates</h1>
+      </div>
+      <div style="width:50%;">
+        <form action="/pirates/story" method="post">
+        <label for="noun">Noun</label>
+        <input id="noun" name="noun" type="text" class="form-control">
+        <label for="adjective">Adjective</label>
+        <input id="adjective" name="adjective" type="text" class="form-control">
+        <label for="verb">Verb</label>
+        <input id="verb" name="verb" type="text" class="form-control">
+        <label for="pluralnoun">Plural Noun</label>
+        <input id="pluralnoun" name="pluralnoun" type="text" class="form-control">
+        <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
